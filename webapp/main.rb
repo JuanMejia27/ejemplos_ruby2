@@ -1,4 +1,5 @@
 require 'sinatra'
+require './song.rb'
 require 'sinatra/reloader' if development?
 set:bind,'0.0.0.0'
 
@@ -20,6 +21,11 @@ end
 get '/clientes' do
     @clientes = (1..15).to_a
     erb :clientes
+end
+
+get '/canciones' do
+    @canciones = Song.all
+    erb :canciones
 end
 
 not_found do 

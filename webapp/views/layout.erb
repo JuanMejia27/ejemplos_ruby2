@@ -4,29 +4,31 @@
  <head>
   <meta charse="utf-8">
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="/public/css/estilo.css" type="text/css"> 
-  <title><h1>ejemplo 2 de sinatra</h1></title>
-
+ <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="estilo.css" type="text/css"> 
+  <title>ejemplo 2 de sinatra</title>
  </head>
 
  <header>
  <label class="hamburger" for="nav-toggle"></label>
-      <input id="nav-toggle" type="checkbox" class="hidden" />
-      <h1>Ejemplo 2 de sinatra</h1>
+      <input id="nav-toggle" type="checkbox" class="hidden" />     
+      <h1>Ejemplo 2 de sinatra</h1> 
       <nav>
         <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/contacto">contacto</a></li>
         <li><a href="/acercade">Acerca de la aplicacion</a></li>
         <li><a href="/clientes">Lista de clientes</a></li>
+        <li><a href="/canciones">Lista de canciones</a></li>
         </ul>
       </nav>
+      
  </header>
-
+ <body>
  <section>
   <%=yield%>
 </section>
+</body>
 <footer></footer>
 </html>
